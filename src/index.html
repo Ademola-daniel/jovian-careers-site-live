@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        My first web page
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQip6pswiZrtuS-tgQbCIih11aasXREoqwl3b9B2lbeugCL03_0iU_bubk&s=10"
+            alt="jovian logo" id="logo">
+    </div>
+    <img src='unsplash.jpg' alt="Banner image" height="240" width=100% id="banner">
+    <h1>Welcome to jovian</h1>
+    <div id="about">
+        <div id="discription">
+            <p style="margin:0">At Jovian, we're on a mission to build the world's most highly
+                technical university, and we're building completely online. we offer several
+                beginner friendly courses that are taken by 300,000+ registered users.
+            </p>
+            <p>We also offer 2 industry-focused bootcamps
+            <ol>
+                <li>
+                    <a href="https://jovian.com/learn/full-stack-web-application-development" target="_blank">Full stack
+                        developer bootcamp</a>
+                </li>
+                <li><a href="https://jovian.com/learn/zero-to-data-analyst-bootcamp" target="_blank">Data science
+                        bootcamp</a></li>
+            </ol>
+            </p>
+        </div>
+        <div id="ime"><img src="Team.jpg" alt="Team" id="team-image"></div>
+    </div>
+
+
+    <h2 style="text-transform: capitalize;">job opportunities</h2>
+    <div id="table-container">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted on</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend eng</td>
+                <td>Bingham</td>
+                <td>india</td>
+                <td>12,000,000</td>
+                <td>mar 3, 2027</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full stack eng</td>
+                <td>Dosa</td>
+                <td>india</td>
+                <td>15,000,000</td>
+                <td>mar 3, 2027</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data scientist</td>
+                <td>San Francisco</td>
+                <td>USA</td>
+                <td>175,000</td>
+                <td>mar 3, 2027</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>ML Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>80,000</td>
+                <td>mar 3, 2027</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="application">
+        <h2>Submit Your Application</h2>
+        <form id="form-id" action="https://formbold.com/s/6M51W" method="POST" enctype="multipart/form-data">
+            <div id="label-sp">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Full Name" placeholder="john doe" required>
+            </div>
+
+            <div id="label-sp">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+
+             <div id="label-sp">
+                <label for="phone">Phone:</label>
+                <input id="phone" name="phone.no" type="number" placeholder="09034527932"  required>
+            </div>
+
+             <div id="label-sp">
+                <label for="dateofbirth">Birth:</label>
+                <input id="dateofbirth" name="dateofbirth" type="date">
+            </div>
+            <div id="label-sp">
+                <label for="position">
+                    Postition Applied for
+                </label><br>
+                <select style="margin-top:8px"; id="position"; name="position applied">
+                    <option value="">Select Position</option>
+                    <option value="Frontend Developer">
+                        Frontend Developer
+                    </option>
+                    <option value="Full stack Developer">
+                        Full stack Developer
+                    </option>
+                    <option value="Data Scientist">
+                        Data Scientist
+                    </option>
+                    <option value="Ml engineer">
+                        ML engineer
+                    </option>
+                </select>
+            </div>
+
+            <div id="label-sp">
+                <label for="file">Upload Resume</label><br>
+                <input id="file" name="Document" type="file" accept=".pdf,.doc,.docx"  style="width:400px; border:1px solid black">
+            </div>
+
+            <div id="label-sp">
+                <label for="UAL">Cover Letter</label>
+                <textarea row="8" column="8" name="review" placeholder="What makes you qualified for the position"></textarea>
+            </div>
+
+            <div id="label-sp">
+                <label for="check"><input id="check" name="terms" type="checkbox"> I agree to the terms and conditions</label>
+                
+            </div>
+            <div id="label-sp">
+                <input value="Submit Application" type="Submit">
+            </div>
+            
+        </form>
+    </div>
+
+    <div id="footer">
+        <ul>
+            <li><a href="" target="_blank">Contact</a></li>
+            <li><a href="" target="_blank">Courses</a></li>
+            <li><a href="" target="_blank">Youtube</a></li>
+        </ul>
+
+    </div>
+
+
+
+</body>
+
+</html>
